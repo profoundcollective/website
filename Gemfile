@@ -5,6 +5,7 @@ gem 'webrick'
 gem 'jekyll-postcss'
 
 group :jekyll_plugins do
+  gem "github-pages", "~> 203"
   gem 'jekyll-sitemap'
   gem 'jekyll-feed'
   gem 'jekyll-seo-tag'
