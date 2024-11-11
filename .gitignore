@@ -1,3 +1,4 @@
+# this is gitignore
 _site/
 .sass-cache/
 .jekyll-cache/
