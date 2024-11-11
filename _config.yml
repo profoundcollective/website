@@ -1,0 +1,25 @@
+url: "https://www.profoundcollective.com"
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "Profound Collective"
+
+plugins:
+  - jekyll-postcss
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+postcss:
+  cache: false
+
+kramdown:
+  syntax_highlighter: coderay
+
+# add _pages folder
+collections:
+  pages:
+    output: true
+    permalink: /:path
+
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 
+  'package.json', 'yarn.lock', 
+  'tailwind.config.js', 'postcss.config.js']
