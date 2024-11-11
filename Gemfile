@@ -11,3 +11,4 @@ group :jekyll_plugins do
 end
 
 gem "kramdown-syntax-coderay"
+gem "kramdown-parser-gfm"

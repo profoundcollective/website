@@ -44,6 +44,8 @@ GEM
       listen (~> 3.0)
     kramdown (2.4.0)
       rexml
+    kramdown-parser-gfm (1.1.0)
+      kramdown (~> 2.0)
     kramdown-syntax-coderay (1.0.1)
       coderay (~> 1.1)
       kramdown (~> 2.0)
@@ -77,6 +79,7 @@ DEPENDENCIES
   jekyll-postcss
   jekyll-seo-tag
   jekyll-sitemap
+  kramdown-parser-gfm
   kramdown-syntax-coderay
   webrick
 
