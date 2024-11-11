@@ -2,10 +2,10 @@ source 'https://rubygems.org'
 
 gem 'jekyll'
 gem 'webrick'
-gem 'jekyll-postcss'
 
 group :jekyll_plugins do
-  gem "github-pages", "~> 203"
+  gem "github-pages"
+  gem 'jekyll-postcss'
   gem 'jekyll-sitemap'
   gem 'jekyll-feed'
   gem 'jekyll-seo-tag'
