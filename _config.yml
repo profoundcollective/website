@@ -1,8 +1,6 @@
 url: "https://www.profoundcollective.com"
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+#baseurl: "/blog" # the subpath of your site, e.g. /blog
 title: "Profound Collective"
-
-
 
 plugins:
   - jekyll-postcss
