@@ -1,6 +1,8 @@
 url: "https://www.profoundcollective.com"
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/blog" # the subpath of your site, e.g. /blog
 title: "Profound Collective"
+
+
 
 plugins:
   - jekyll-postcss
@@ -8,8 +10,8 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-#postcss:
-#  cache: false
+postcss:
+  cache: false
 
 kramdown:
   syntax_highlighter: coderay
@@ -23,15 +25,3 @@ collections:
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 
   'package.json', 'yarn.lock', 
   'tailwind.config.js', 'postcss.config.js']
-
-# added as stabby
-lsi: false
-safe: true
-source: /
-incremental: false
-highlighter: rouge
-gist:
-  noscript: false
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge
