@@ -13,7 +13,8 @@ module.exports = {
           'rowdie': ['Rowdies'],
           'josefin': ['Josefin Sans'],
           'roboto': ['Roboto'],
-          'zilla': ['Zilla Slab']
+          'zilla': ['Zilla Slab'],
+          'main': ['Verdana'],
         }
       },
     },
