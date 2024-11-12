@@ -4,7 +4,6 @@ author: Profounder
 comments: true
 ---
 
-<div class="font-zilla" markdown="1">
 
 <blockquote class="p-4 my-4 border-s-4 border-gray-300 bg-gray-50 dark:border-gray-500 dark:bg-gray-800">
     <p class="text-xl italic font-medium leading-relaxed text-gray-900 dark:text-white">
@@ -113,5 +112,3 @@ This leads to truly cross-functional teams.
 Testers, Designers, et al, learn more about coding and the developers learn more about Testing, Design, Analysis, and beyond. Everyone learns together and becomes more well versed in other practices, garnering greater empathy and understanding for the work their team members do. This includes the oft forgotten and overlooked Users. You know, the ones who end up frustrated with the team for always delivering something different than what they expected. Those Users. 
 
 Involve them as much as you can. Their perception of the software is the ultimate measure of the quality of it.
-
-</div>

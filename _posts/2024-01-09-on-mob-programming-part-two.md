@@ -5,17 +5,13 @@ comments: true
 ---
 
 
-<div class="font-zilla" markdown="1">
-
 ## Management: We still don't like the idea of everyone working on one thing. It just seems inefficient and expensive!
-
-<br/>
 
 Is what you're currently doing working?
 
 How are the old ways treating you?
 
-Are you continuously delivering high-quality value with clear expectations regarding your ROI(s)? 
+Are you continuously delivering high-quality value with clear expectations on your ROI(s)? 
 
 What is all of this actually costing you?
 
@@ -23,29 +19,30 @@ We can do better. We must do better.
 
 <a href="https://www.profoundcollective.com" class="link" target="_blank">We will be more effective together</a>
 
-As mentioned previously - <a href="https://www.profoundcollective.com/2024/01/04/on-mob-programming-part-one.html" class="link" target="_blank">On Mob Programming: Part One</a> - we delved a bit into rethinking what cost means and how mobbing can help reduce cost and introduce quality from the beginning. 
+As mentioned previously - <a href="https://www.profoundcollective.com/2024/01/04/on-mob-programming-part-one.html" class="link" target="_blank">On Mob Programming: Part One</a> - we delved into rethinking what cost means and how teaming can help reduce cost and bake quality in from the beginning. 
 
-If you'd like to dive deeper into any of the following points, please see <a href="https://www.linkedin.com/in/woodyzuill/?lipi=urn%3Ali%3Apage%3Ad_flagship3_pulse_read%3B9RJP4cu9QkWjswzOtfsy7A%3D%3D" class="link" target="_blank">Woody Zuill's</a> book on <a href="https://softwareteaming.com" class="link" target="_blank">Software Teaming</a>. What follows pulls heavily from the source material with our own thoughts and experiences applied. 
+  If you'd like to dive deeper into any of the following points, please see <a href="https://www.linkedin.com/in/woodyzuill/?lipi=urn%3Ali%3Apage%3Ad_flagship3_pulse_read%3B9RJP4cu9QkWjswzOtfsy7A%3D%3D" class="link" target="_blank">Woody Zuill's</a> book on <a href="https://softwareteaming.com" class="link" target="_blank">Software Teaming</a>. What follows pulls heavily from the source material with our own thoughts and experiences applied.
+
 <hr class="border-b-2 border-gray-400 mb-6"/>
 
 ### The Cost of Hiring
-Hiring new people in organizations large and small inevitably leads to long periods of getting up to speed. Learning about how the team works while absorbing what the business does. This is effectively a dead period. It's not simple and it's certainly not enjoyable. It is most definitely a waste of time and money if there are better ways of getting new hires up to speed.
+Hiring new people in organizations large and small inevitably leads to long periods of getting them up to speed. They must learn about how the team works and simultaneously understand what the business does. This is potentially a dead period of low value. It's not always simple and it's certainly not enjoyable. It *is* most definitely a waste of time and money if there are better ways of getting new hires up to speed.
 
-What are the costs here? Can you identify them? Seem them?
+What are the costs here? Can you identify them? See them?
 
-How would you go about measuring them? Addressing them?
+How would you go about understanding them? Measuring them? Addressing them?
 
 Do these costs show up on your P&L? Doubtful.
 
 Why is this considered acceptable when there are clearly better ways?
 
-The **cost of getting the new hires "up to speed"** depends on how large the dumpster fire is and where all the "load bearing" bits are in the code. 
+The **cost of getting the new hires "up to speed"** depends on how large the dumpster fire is and where all the "load bearing" bits are in the code. It also depends on how well your teams actually function together.
 
 What if the new hire sees behind the curtain and bails? How much time did you just waste? Your time. Your money. The time of other workers that were getting them up to speed... Speaking of other workers... What about the **cost of pulling on their already valuable time?** Time probably spent fighting unnecessary fires created by a dysfunctional system... but that's a different soapbox. 
 
 What about the difficult to quantify and mostly unknown cost of low quality during the new hire's onboarding period? 
 
-Beyond the "up to speed" period, what about the point at which the manager decides the new hire is ready to start contributing on their own? It is more than likely that they still know very little of the business and that most of their onboarding was focused on getting their tools set up, how to deploy code, and probably not much else. 
+Beyond the "up to speed" period, what about the point at which the manager decides the new hire is ready to start contributing on their own? It is more than likely that they still know very little of the business and that most of their onboarding was focused on getting their tools set up, how to deploy code, and probably not much else. The probability that they are going to cause harm or introduce risk is high.
 
 So, left on their own, they aim to please. After all, it's <a href="https://www.alfiekohn.org/article/rewards-25-years-later/?print=print" class="link" target="_blank">what we've been taught since childhood</a>. 
 
@@ -175,5 +172,3 @@ There are many more topics and reasons we could delve into specific to Mob Progr
 Hopefully this post shed some light on how Mob Programming will save on cost in the long term, introduce quality from the beginning where it belongs, and lead to healthier, happier humans doing their best as a team.
 
 If any of the above points ring true with your organization or team(s), let us know and we'll be more than happy to help.
-
-</div>
