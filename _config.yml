@@ -1,5 +1,6 @@
 url: "https://www.profoundcollective.com"
 baseurl: "" # the subpath of your site, e.g. /blog
+
 title: "Profound Collective"
 
 plugins:
@@ -20,6 +21,17 @@ collections:
     output: true
     permalink: /:path
 
-exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 
-  'package.json', 'yarn.lock', 
-  'tailwind.config.js', 'postcss.config.js']
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - yarn.lock
+  - package.json
+  - package-lock.json
+  - tailwind.config.js
+  - postcss.config.js
