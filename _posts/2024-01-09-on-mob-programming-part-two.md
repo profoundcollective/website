@@ -4,9 +4,12 @@ author: Profounder
 comments: true
 ---
 
-# On Mob Programming: Part Two
 
-### Management: We still don't like the idea of everyone working on one thing. It just seems inefficient and expensive!
+<div class="font-zilla" markdown="1">
+
+## Management: We still don't like the idea of everyone working on one thing. It just seems inefficient and expensive!
+
+<br/>
 
 Is what you're currently doing working?
 
@@ -20,10 +23,10 @@ We can do better. We must do better.
 
 [We will be more effective together.](https://www.profoundcollective.com/)
 
-As mentioned previously - [On Mob Programming: Part One](https://github.com/profoundcollective/website/blob/main/_posts/2024-01-04-on-mob-programming-1.md) - we delved a bit into rethinking what cost means and how mobbing can help reduce cost and introduce quality from the beginning. 
+As mentioned previously - [On Mob Programming: Part One](https://www.profoundcollective.com/2024-01-04-on-mob-programming-part-one.html) - we delved a bit into rethinking what cost means and how mobbing can help reduce cost and introduce quality from the beginning. 
 
 If you'd like to dive deeper into any of the following points, please see [Woody Zuill](https://www.linkedin.com/in/woodyzuill/?lipi=urn%3Ali%3Apage%3Ad_flagship3_pulse_read%3B9RJP4cu9QkWjswzOtfsy7A%3D%3D)'s book on [Software Teaming](https://softwareteaming.com/). What follows pulls heavily from the source material with our own thoughts and experiences applied. 
-___
+<hr class="border-b-2 border-gray-400 mb-6"/>
 
 ### The Cost of Hiring
 Hiring new people in organizations large and small inevitably leads to long periods of getting up to speed. Learning about how the team works while absorbing what the business does. This is effectively a dead period. It's not simple and it's certainly not enjoyable. It is most definitely a waste of time and money if there are better ways of getting new hires up to speed.
@@ -52,12 +55,20 @@ The benefits are striking.
 
 **Bonus Round**: Potential hires. You can leverage mobbing as a way to interview and as a way to see how well new hires might work with the team. Immediately. They can get in there and code right away. Your team doesn't have to step away to conduct interviews. They are **still delivering while interviewing and trialing a potential hire.**
 
-___
+<hr class="border-b-2 border-gray-400 mb-6"/>
 
-![the-sound-of-inevitability](https://media.licdn.com/dms/image/v2/D4E12AQElWJiOhURpdQ/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1704824268217?e=1736985600&v=beta&t=UYXvnNTh_DoQkl14XFbXGM5CuqSKmb_RqAHPJpXtypM) 
-> Workers will come and go. The Mob lives on
+
 
 ### The Cost of Leaving
+<br/>
+
+
+<div class="flex justify-center">
+<img src="https://media.licdn.com/dms/image/v2/D4E12AQElWJiOhURpdQ/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1704824268217?e=1736985600&v=beta&t=UYXvnNTh_DoQkl14XFbXGM5CuqSKmb_RqAHPJpXtypM"/> 
+</div>
+
+<div class="italic text-center mt-2"> Workers will come and go. The Mob lives on. </div>
+<br/>
 
 What about the costs of workers leaving? 
 
@@ -82,7 +93,7 @@ People are not machined parts, and they are not replaced in that way. You do not
 The only scenario in which you would suffer similar losses to the siloed worker leaving is if the entire mob left. This is far less likely to happen. If it did, you may need to take a deeper look at how you are running your organization and its teams, as this is probably indicative of a greater systemic illness.
 
 The list goes on here, but at least we're thinking about it now... Impact to team morale (immediate and longer term), impact to culture, and impacts unknown.
-___
+<hr class="border-b-2 border-gray-400 mb-6"/>
 
 ### The Cost of Single Points of Failure
 
@@ -116,10 +127,10 @@ Go work on "other things" and create even more problems and introduce red herrin
 
 Stop the madness. Stop the foolishness. 
 
-**Think about cost more deeply. **
+**Think about cost more deeply.**
 
 If the team is a team, let them work together like one. 
-___
+<hr class="border-b-2 border-gray-400 mb-6"/>
 
 ### The Cost of Late Integration 
 
@@ -133,9 +144,12 @@ Instead, we are big proponents of tried-and-true [Trunk Based Development](https
 
 Without delving any deeper into the above topics, it is and has been known for decades now that the cost of integrating code later only increases the time it takes to deliver and exacerbates the [time and cost of fixing defects](https://www.amazon.co.uk/Engineering-Economics-Prentice-Hall-computing-technology/dp/0138221227). 
 
-![cost-of-change](https://media.licdn.com/dms/image/v2/D4E12AQGRNDKARTm_5g/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1704826290864?e=1736985600&v=beta&t=lW1z4NAWXEm75GUEprQQAJrQhnT5-Lx2-vedWnaY4GE)
+<div class="flex justify-center mt-6">
+<img src="https://media.licdn.com/dms/image/v2/D4E12AQGRNDKARTm_5g/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1704826290864?e=1736985600&v=beta&t=lW1z4NAWXEm75GUEprQQAJrQhnT5-Lx2-vedWnaY4GE"/>
+</div>
+<div class="italic text-center text-xs mt-3"> Waterfall jokes aside, it would be nice to see this chart reimagined with Software Teaming and how much the curve flattens.</div>
+<br/>
 
-> Waterfall jokes aside, it would be nice to see this chart reimagined with Software Teaming and how much the curve flattens.
 
 ### If we're utilizing a software teaming or mob-based approach, we see the following:
 
@@ -152,7 +166,7 @@ The biggest benefit may be that the Users are receiving value on a continuous ba
 Instead of fire drills and blaming individuals, the team shares ownership since they delivered it together and they resolve it together - reinforcing the lesson(s) learned as yet another bonus. 
 
 Note: Other practices such as [feature flagging](https://en.wikipedia.org/wiki/Feature_toggle), [branch by abstraction](https://trunkbaseddevelopment.com/branch-by-abstraction/), [dark launching](https://martinfowler.com/bliki/DarkLaunching.html), et al., should also be considered but are beyond the scope of this article. 
-___
+<hr class="border-b-2 border-gray-400 mb-6"/>
 
 ### Parting Thoughts
 
@@ -163,3 +177,5 @@ There are many more topics and reasons we could delve into specific to Mob Progr
 Hopefully this post shed some light on how Mob Programming will save on cost in the long term, introduce quality from the beginning where it belongs, and lead to healthier, happier humans doing their best as a team.
 
 If any of the above points ring true with your organization or team(s), let us know and we'll be more than happy to help.
+
+</div>

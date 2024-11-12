@@ -13,6 +13,8 @@ postcss:
   cache: false
 
 kramdown:
+  input: GFM
+  auto_ids: true
   syntax_highlighter: coderay
 
 # add _pages folder
