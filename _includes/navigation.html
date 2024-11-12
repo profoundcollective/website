@@ -1,11 +1,11 @@
 <nav class="p-4 flex justify-between items-center bg-stone-800 w-full sticky top-0">
   <div class="flex-none">
-    <a href="#">
+    <a href="/">
       <img src="/assets/images/logo-no-background.png" class="max-h-6 md:max-h-8 lg:max-h-12 max-w-xs"
         alt="main image" />
     </a>
   </div>
-  <div class="w-48 md:w-72 lg:w-96 text-xs text-white font-josefin flex justify-between md:text-xl lg:text-xl">
+  <div class="w-48 md:w-72 lg:w-96 text-xs text-white font-josefin flex justify-around md:text-xl lg:text-xl">
     {% for item in site.data.navigation %}
     <div {% if page.url==item.link %} class="font-bold" {% endif %}>      
       <a href="{{ item.link }}" class="hover:text-slate-300 hover:border-b-2 cursor-pointer">

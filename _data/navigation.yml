@@ -1,12 +1,10 @@
-- name: Home
-  link: /
 - name: Services
-  link: /services.html
-- name: Aim
-  link: /aim.html
+  link: /#services
 - name: Blog
   link: /blog.html
+- name: Aim
+  link: /#aim
 - name: Clients
-  link: /clients.html
+  link: /#clients
 - name: Contact
-  link: /contact.html
+  link: /#contact
