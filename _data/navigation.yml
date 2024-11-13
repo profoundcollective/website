@@ -1,10 +1,8 @@
-- name: Services
-  link: /#services
+- name: Who We Help
+  link: /#who-we-help
+- name: How We Help
+  link: /#how-we-help
+- name: Our Aim
+  link: /#aim
 - name: Blog
   link: /blog.html
-- name: Aim
-  link: /#aim
-- name: Clients
-  link: /#clients
-- name: Contact
-  link: /#contact
