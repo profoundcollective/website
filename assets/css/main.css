@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 .step {
-    @apply py-6 px-24 bg-green-600 text-white cursor-pointer shadow-xl;
+    @apply py-6 px-8 bg-green-600 text-white cursor-pointer shadow-xl;
 }
 
 .step.active {
@@ -18,7 +18,7 @@
 }
 
 .step-detail {
-    @apply p-6 m-6;
+    @apply p-6 m-6 bg-slate-200;
 }
 
 @layer base {
