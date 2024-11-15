@@ -48,13 +48,11 @@
   function highlightActiveHashRoute() {
     var links = document.getElementsByClassName('nav-link');
     for (var i = 0; i < links.length; i++) {
-      if (links[i].hash == window.location.hash) {
+      if (links[i].hash == window.location.hash && window.location.hash !== '') {
         links[i].classList.add('font-bold');
-      }
-      else if (links[i].hash === '' && window.location.pathname === '/blog.html') {
+      } else if (links[i].hash === '' && window.location.pathname === '/blog.html') {
         links[i].classList.add('font-bold');
-      }
-      else {
+      } else {
         links[i].classList.remove('font-bold');
       }
     }
