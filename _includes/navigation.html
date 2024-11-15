@@ -13,9 +13,9 @@
       class="hidden w-full items-end bg-black text-white font-josefin text-3xl p-4 fixed top-0 left-0">
       <div class="flex flex-row-reverse justify-between">
         <input type="button" class="font-bold font-josefin m-0 p-0 h-10 w-10 cursor-pointer" onclick="closeMobileNavigation(event)" value="X"/>
-        <div class="flex-col">
+        <div class="flex-col justify-around">
           {% for item in site.data.navigation %}
-          <div {% if page.url==item.link %} class="font-bold" {% endif %}>
+          <div {% if page.url==item.link  %} class="font-bold" {% endif %} class="my-4">
             <a href="{{ item.link }}" class="nav-link">
               {{ item.name }}
             </a>
@@ -27,7 +27,7 @@
   </div>
   </div>
   <div
-    class="w-2/3 md:w-2/3 lg:w-1/3 text-xs text-white font-josefin hidden lg:flex justify-between md:text-xl lg:text-xl">
+    class="w-3/6 xl:w-2/6 text-xs text-white font-josefin hidden lg:flex justify-between md:text-xl lg:text-xl">
     {% for item in site.data.navigation %}
     <div {% if page.url==item.link %} class="font-bold" {% endif %}>
       <a href="{{ item.link }}" class="nav-link">
@@ -39,6 +39,23 @@
 </nav>
 
 <script>
+
+  window.addEventListener('hashchange', function () {
+    highlightActiveHashRoute();
+  });
+
+  function highlightActiveHashRoute() {
+    var links = document.getElementsByClassName('nav-link');
+    for (var i = 0; i < links.length; i++) {
+      if (links[i].hash == window.location.hash) {
+        links[i].classList.add('font-bold');
+      } else {
+        links[i].classList.remove('font-bold');
+      }
+    }
+  };
+
+  highlightActiveHashRoute();
 
   function openMobileNavigation(e) {
 
