@@ -1,7 +1,8 @@
 <nav class="p-4 pr-6 flex justify-between items-center bg-black w-full sticky top-0">
   <div class="flex-none">
     <a href="/">
-      <img src="/assets/images/logo-no-background.png" class="max-h-10 md:max-h-10 lg:max-h-12 max-w-xs" alt="main image" />
+      <img src="/assets/images/logo-no-background.png" class="max-h-10 md:max-h-10 lg:max-h-12 max-w-xs"
+        alt="main image" />
     </a>
   </div>
   <div class="flex lg:hidden cursor-pointer" onclick="openMobileNavigation()">
@@ -12,10 +13,11 @@
     <div id="mobile-nav"
       class="hidden w-full items-end bg-black text-white font-josefin text-3xl p-4 fixed top-0 left-0">
       <div class="flex flex-row-reverse justify-between">
-        <input type="button" class="font-bold font-josefin m-0 p-0 h-10 w-10 cursor-pointer" onclick="closeMobileNavigation(event)" value="X"/>
+        <input type="button" class="font-bold font-josefin m-0 p-0 h-10 w-10 cursor-pointer"
+          onclick="closeMobileNavigation(event)" value="X" />
         <div class="flex-col justify-around">
           {% for item in site.data.navigation %}
-          <div {% if page.url==item.link  %} class="font-bold" {% endif %} class="my-4">
+          <div {% if page.url==item.link %} class="font-bold" {% endif %} class="my-4">
             <a href="{{ item.link }}" class="nav-link">
               {{ item.name }}
             </a>
@@ -26,8 +28,7 @@
     </div>
   </div>
   </div>
-  <div
-    class="w-3/6 xl:w-2/6 text-xs text-white font-josefin hidden lg:flex justify-between md:text-xl lg:text-xl">
+  <div class="w-3/6 xl:w-2/6 text-xs text-white font-josefin hidden lg:flex justify-between md:text-xl lg:text-xl">
     {% for item in site.data.navigation %}
     <div {% if page.url==item.link %} class="font-bold" {% endif %}>
       <a href="{{ item.link }}" class="nav-link">
@@ -49,7 +50,11 @@
     for (var i = 0; i < links.length; i++) {
       if (links[i].hash == window.location.hash) {
         links[i].classList.add('font-bold');
-      } else {
+      } 
+      else if (links[i].hash === '' && window.location.pathname === '/blog.html') {
+        links[i].classList.add('font-bold');
+      } 
+      else {
         links[i].classList.remove('font-bold');
       }
     }
@@ -64,7 +69,7 @@
     if (mobileNav.classList.contains('hidden')) {
       mobileNav.classList.remove('hidden');
       mobileNav.classList.add('block');
-    } 
+    }
   }
 
   function closeMobileNavigation(e) {
