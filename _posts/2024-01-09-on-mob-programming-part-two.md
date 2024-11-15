@@ -4,8 +4,8 @@ author: Profounder
 comments: true
 ---
 
-
-## Management: We still don't like the idea of everyone working on one thing. It just seems inefficient and expensive!
+<div class="font-josefin font-light text-2xl" markdown="1">
+<h1>Management: We still don't like the idea of everyone working on one thing. It just seems inefficient and expensive!</h1>
 
 Is what you're currently doing working?
 
@@ -25,7 +25,7 @@ As mentioned previously - <a href="https://www.profoundcollective.com/2024/01/04
 
 <hr class="border-b-2 border-gray-400 mb-6"/>
 
-### The Cost of Hiring
+<h1>The Cost of Hiring</h1>
 Hiring new people in organizations large and small inevitably leads to long periods of getting them up to speed. They must learn about how the team works and simultaneously understand what the business does. This is potentially a dead period of low value. It's not always simple and it's certainly not enjoyable. It *is* most definitely a waste of time and money if there are better ways of getting new hires up to speed.
 
 What are the costs here? Can you identify them? See them?
@@ -54,7 +54,7 @@ The benefits are striking.
 
 <hr class="border-b-2 border-gray-400 mb-6"/>
 
-### The Cost of Leaving
+<h1>The Cost of Leaving</h1>
 <br/>
 
 
@@ -90,7 +90,7 @@ The only scenario in which you would suffer similar losses to the siloed worker 
 The list goes on here, but at least we're thinking about it now... Impact to team morale (immediate and longer term), impact to culture, and impacts unknown.
 <hr class="border-b-2 border-gray-400 mb-6"/>
 
-### The Cost of Single Points of Failure
+<h1>The Cost of Single Points of Failure</h1>
 
 Engineers love to talk about how to avoid single points of failure in software systems.
 
@@ -127,7 +127,7 @@ Stop the madness. Stop the foolishness.
 If the team is a team, let them work together like one. 
 <hr class="border-b-2 border-gray-400 mb-6"/>
 
-### The Cost of Late Integration 
+<h1>The Cost of Late Integration </h1>
 
 <a href="https://www.youtube.com/watch?v=pXovk-5J0Lg" class="link" target="_blank">Continuous Integration</a> should be considered a standard practice at software organizations of any size or shape - from startups to enterprise. 
 
@@ -146,7 +146,7 @@ Without delving any deeper into the above topics, it is and has been known for d
 <br/>
 
 
-### If we're utilizing a software teaming or mob-based approach, we see the following:
+<h1>If we're utilizing a software teaming or mob-based approach, we </h1>see the following:
 
 Continuous code review effectively eliminates typos and simple errors in the code at the time it is written. It also encourages open conversation between the developers, analysts, business, testers, users, and anyone else on the team. This leads to inherent quality and no wait time when questions arise.
 
@@ -163,7 +163,7 @@ Instead of fire drills and blaming individuals, the team shares ownership since 
 Note: Other practices such as <a href="https://en.wikipedia.org/wiki/Feature_toggle" class="link" target="_blank">feature flagging</a>, <a href="https://trunkbaseddevelopment.com/branch-by-abstraction/" class="link" target="_blank">branch by abstraction</a>, <a href="https://martinfowler.com/bliki/DarkLaunching.html" class="link" target="_blank">dark launching</a>, et al., should also be considered but are beyond the scope of this article. 
 <hr class="border-b-2 border-gray-400 mb-6"/>
 
-### Parting Thoughts
+<h1>Parting Thoughts</h1>
 
 Yes, context is king and as mentioned in Part One, we will acknowledge again that this is no panacea or silver bullet. Rather, it is an effective way of working that should be considered and properly understood before it is dismissed with the same ignorance that pair programming and TDD are dismissed.
 
@@ -172,3 +172,5 @@ There are many more topics and reasons we could delve into specific to Mob Progr
 Hopefully this post shed some light on how Mob Programming will save on cost in the long term, introduce quality from the beginning where it belongs, and lead to healthier, happier humans doing their best as a team.
 
 If any of the above points ring true with your organization or team(s), let us know and we'll be more than happy to help.
+
+</div>
