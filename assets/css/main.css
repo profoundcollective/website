@@ -6,54 +6,50 @@
 @tailwind utilities;
 
 .step {
-    @apply py-6 px-8 bg-green-600 text-white cursor-pointer shadow-xl;
+  @apply py-6 px-8 bg-green-600 text-white cursor-pointer shadow-xl;
 }
 
 .step.active {
-    @apply bg-green-700 font-bold;
+  @apply bg-green-700 font-bold;
 }
 
 .step:hover {
-    @apply bg-green-700;
+  @apply bg-green-700;
 }
 
 .step-detail {
-    @apply p-6 m-6 bg-slate-200;
+  @apply p-6 m-6 bg-slate-200;
 }
 
 @layer base {
-    html {
-        font-family: "Tahoma", system-ui, sans-serif;
-      }
-    h1 {
-        @apply text-2xl;
-        @apply font-bold;
-        @apply mb-3;
-    }
-    h2 {
-        @apply text-xl;
-        @apply font-bold;
-        @apply mb-3;
-    }
-    h3 {
-        @apply text-lg;
-        @apply font-bold;
-        @apply mb-3;
-    }
-    h4 {
-        @apply text-base;
-        @apply font-bold;
-        @apply mb-3;
-    }
-    p {
-        @apply pb-3;
-    }
-    .nav-link {
-        @apply hover:text-slate-300 hover:border-b-2 cursor-pointer font-light md:mx-4;
-    }
-
-
-    .client {
-        @apply py-8 min-h-screen text-center bg-white flex flex-col justify-center items-center font-josefin font-light;
-    }
+  html {
+    font-family: "Tahoma", system-ui, sans-serif;
   }
+  h1 {
+    @apply text-5xl;
+    @apply mb-3;
+  }
+  h2 {
+    @apply text-4xl;
+    @apply mb-3;
+  }
+  h3 {
+    @apply text-3xl;
+    @apply mb-3;
+  }
+  h4 {
+    @apply text-base;
+    @apply mb-3;
+  }
+  p {
+    @apply pb-3;
+  }
+
+  .nav-link {
+    @apply hover:text-slate-300 hover:border-b-2 cursor-pointer font-light md:mx-4;
+  }
+
+  .client {
+    @apply py-8 min-h-screen text-center bg-white flex flex-col justify-center items-center font-josefin font-light;
+  }
+}
