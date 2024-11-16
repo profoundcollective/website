@@ -1,0 +1,59 @@
+---
+---
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+    @apply text-5xl font-bold mb-3;
+}
+
+h2 {
+    @apply text-4xl font-bold mb-3;
+}
+
+h3 {
+    @apply text-3xl font-bold mb-3;
+}
+
+h4 {
+    @apply text-2xl font-bold mb-3;
+}
+
+h5 {
+    @apply text-xl font-bold mb-3;
+}
+
+h6 {
+    @apply text-lg font-bold mb-3;
+}
+
+hr {
+    @apply border-b-2 border-gray-400 mb-6;
+}
+
+body {
+    @apply font-josefin font-light text-2xl;
+}
+
+.post {
+    @apply font-josefin;
+    @apply p-2;
+}
+
+.post a {
+    @apply text-green-700 font-bold underline;
+    @apply hover:text-green-900;
+    @apply visited:text-green-950 opacity-50;
+}
+
+.post-image {
+    @apply flex flex-col justify-center items-center m-8;
+    @apply text-lg italic;
+}
+
+.post blockquote {
+    @apply p-4 my-4 border-s-4 border-gray-300 bg-gray-50 dark:border-gray-500 dark:bg-gray-800;
+    @apply text-xl italic font-medium leading-relaxed text-gray-900 dark:text-white;
+}

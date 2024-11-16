@@ -51,12 +51,8 @@
     .nav-link {
         @apply hover:text-slate-300 hover:border-b-2 cursor-pointer font-light md:mx-4;
     }
-    .link {
-        @apply text-green-700 font-bold;
-        @apply hover:text-green-900;
-        @apply underline;
-        @apply visited:text-green-950 opacity-50;
-    }
+
+
     .client {
         @apply py-8 min-h-screen text-center bg-white flex flex-col justify-center items-center font-josefin font-light;
     }
