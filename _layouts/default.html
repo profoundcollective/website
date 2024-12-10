@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: " en-US" }}" xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:fb="http://ogp.me/ns/fb#">
+<html lang="{{ site.lang | default: "en-US" }}" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:image" content="assets/images/logo-no-background.png" />
-  <meta property="og:title" content="Get the Right Things Done" />
+
   <meta charset="utf-8">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://profoundcollective.com/" />
+  <meta property="og:site_name" content="Profound Collective" />
+  <meta property="og:image" itemprop="image primaryImageOfPage" content="https://www.profoundcollective.com/assets/images/logo-no-background.png" />
+  <meta name="description" content="Get the Right Things Done." />
+  <meta property="og:title" content="Get the Right Things Done" />
+
+
   <title>{{ page.title }} - {{ site.title }}</title>
   <!-- googlefonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +22,7 @@
     rel="stylesheet">
   <!-- googlefonts -->
 
-  <link rel="stylesheet" href="{{ "assets/css/main.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ " assets/css/main.css" | relative_url }}">
 
   {% feed_meta %}
   {% seo %}
