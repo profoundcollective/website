@@ -6,11 +6,11 @@
 @tailwind utilities;
 
 .step {
-  @apply py-6 px-8 bg-green-600 text-white cursor-pointer shadow-xl;
+  @apply px-8 py-6 text-white bg-green-600 shadow-xl cursor-pointer;
 }
 
 .step.active {
-  @apply bg-green-700 font-bold;
+  @apply font-bold bg-green-700;
 }
 
 .step:hover {
@@ -46,14 +46,26 @@
   }
 
   .nav-link {
-    @apply hover:text-slate-300 hover:border-b-2 cursor-pointer font-light md:mx-4;
+    @apply font-light cursor-pointer hover:text-slate-300 hover:border-b-2 md:mx-4;
   }
 
   .client {
-    @apply py-8 m-8 p-8 bg-white flex flex-col justify-center items-center font-josefin font-light w-3/5 border-2 border-zinc-200 shadow-lg;
+    @apply flex flex-col items-center justify-center w-3/5 p-8 py-8 m-8 font-light bg-white border-2 shadow-lg font-josefin border-zinc-200;
   }
 
   .client > blockquote {
-    @apply font-light text-gray-900 text-xl italic w-9/12 opacity-60;
+    @apply w-9/12 text-xl italic font-light text-gray-900 opacity-60;
+  }
+
+  .book-list-item {
+    @apply content-center h-full p-8 my-2 cursor-pointer;
+  }
+
+  .book-list-link {
+    @apply grid place-content-center;
+  }
+
+  .book-list-image {
+    @apply justify-center shadow-xl w-72 h-96 hover:shadow-2xl;
   }
 }
