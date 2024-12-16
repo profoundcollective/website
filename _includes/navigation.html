@@ -1,19 +1,19 @@
-<nav class="top-0 sticky flex justify-between items-center bg-black p-4 pr-6 w-full">
+<nav class="sticky top-0 flex items-center justify-between w-full p-4 pr-6 bg-black">
   <div class="flex-none">
     <a href="/">
       <img src="/assets/images/logo-no-background.png" class="max-w-xs max-h-10 md:max-h-10 lg:max-h-12"
         alt="main image" />
     </a>
   </div>
-  <div class="flex lg:hidden cursor-pointer" onclick="openMobileNavigation()">
-    <svg xmlns="http://www.w3.org/2000/svg" class="justify-end items-end w-8 h-8" viewBox="0 0 448 512" fill="white">
+  <div class="flex cursor-pointer lg:hidden" onclick="openMobileNavigation()">
+    <svg xmlns="http://www.w3.org/2000/svg" class="items-end justify-end w-8 h-8" viewBox="0 0 448 512" fill="white">
       <path
         d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
     </svg>
     <div id="mobile-nav"
-      class="top-0 left-0 fixed items-end hidden bg-black p-4 w-full font-josefin text-3xl text-white">
+      class="fixed top-0 left-0 items-end hidden w-full p-4 text-3xl text-white bg-black font-josefin">
       <div class="flex flex-row-reverse justify-between">
-        <input type="button" class="m-0 p-0 w-10 h-10 font-bold font-josefin cursor-pointer"
+        <input type="button" class="w-10 h-10 p-0 m-0 font-bold cursor-pointer font-josefin"
           onclick="closeMobileNavigation(event)" value="X" />
         <div class="flex-col justify-around">
           {% for item in site.data.navigation %}
@@ -29,7 +29,7 @@
   </div>
   </div>
   <div
-    class="lg:flex justify-between hidden w-3/6 xl:w-3/6 font-josefin text-white text-xs md:text-xl lg:text-xl">
+    class="justify-between hidden w-3/6 text-xs text-white lg:flex xl:w-3/6 font-josefin md:text-xl lg:text-xl">
     {% for item in site.data.navigation %}
     <div {% if page.url==item.link %} class="font-bold" {% endif %}>
       <a href="{{ item.link }}" class="nav-link">
