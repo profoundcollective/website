@@ -2,9 +2,9 @@
   link: /#who-we-help
 - name: How We Help
   link: /#how-we-help
-- name: Our Aim
-  link: /#aim
+# - name: Our Aim
+#   link: /#aim
 - name: Resources
-  link: /#resources
-- name: Blog
-  link: /blog.html
+  link: /resources.html
+# - name: Blog
+#   link: /blog.html
