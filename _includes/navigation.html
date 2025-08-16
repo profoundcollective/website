@@ -1,35 +1,42 @@
-<nav class="sticky top-0 flex items-center justify-between w-full p-4 pr-6 bg-black">
-  <div class="flex-none">
+<nav class="sticky top-0 z-40 flex items-center justify-between w-full p-4 pr-6 bg-black">
+  <div class="relative z-50 flex-none">
     <a href="/">
       <img src="/assets/images/logo-no-background.png" class="max-w-xs max-h-10 md:max-h-10 lg:max-h-12"
         alt="main image" />
     </a>
   </div>
-  <div class="flex cursor-pointer lg:hidden" onclick="openMobileNavigation()">
+  <div class="relative z-50 flex cursor-pointer lg:hidden" onclick="openMobileNavigation()">
     <svg xmlns="http://www.w3.org/2000/svg" class="items-end justify-end w-8 h-8" viewBox="0 0 448 512" fill="white">
       <path
         d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
     </svg>
     <div id="mobile-nav"
-      class="fixed top-0 left-0 items-end hidden w-full p-4 text-3xl text-white bg-black font-josefin">
-      <div class="flex flex-row-reverse justify-between">
-        <input type="button" class="w-10 h-10 p-0 m-0 font-bold cursor-pointer font-josefin"
-          onclick="closeMobileNavigation(event)" value="X" />
-        <div class="flex-col justify-around">
+      class="fixed inset-0 w-full h-full p-6 text-3xl text-white transition-all duration-300 transform -translate-x-full bg-black font-josefin z-[9999]">
+      <div class="flex flex-col h-full">
+        <div class="flex justify-end">
+          <button class="w-10 h-10 p-0 m-0 text-2xl font-bold text-white transition-colors hover:text-green-500"
+            onclick="closeMobileNavigation(event)">✕</button>
+        </div>
+        <nav class="flex flex-col mt-8 space-y-6">
           {% for item in site.data.navigation %}
-          <div {% if page.url==item.link %} class="font-bold" {% endif %} class="my-4">
-            <a href="{{ item.link }}" class="nav-link">
+          <div {% if page.url==item.link %} class="font-bold" {% endif %}>
+            <a href="{{ item.link }}" class="block w-full py-2 transition-colors nav-link hover:text-green-500">
               {{ item.name }}
             </a>
           </div>
           {% endfor %}
-        </div>
+          <div class="mt-12">
+            <a href="mailto:info@profoundcollective.com"
+              class="text-white bg-green-600 btn btn-primary hover:bg-green-700">
+              Start Now
+            </a>
+          </div>
+        </nav>
       </div>
     </div>
   </div>
   </div>
-  <div
-    class="justify-between hidden w-4/6 text-xs text-white lg:flex xl:w-3/6 font-josefin md:text-xl lg:text-xl">
+  <div class="justify-between hidden w-4/6 text-xs text-white lg:flex xl:w-3/6 font-josefin md:text-xl lg:text-xl">
     {% for item in site.data.navigation %}
     <div {% if page.url==item.link %} class="font-bold" {% endif %}>
       <a href="{{ item.link }}" class="nav-link">
@@ -37,6 +44,11 @@
       </a>
     </div>
     {% endfor %}
+    <!-- <div>
+      <a href="mailto:info@profoundcollective.com" class="text-white bg-green-600 btn btn-primary hover:bg-green-700">
+        Start Now
+      </a>
+    </div> -->
   </div>
 </nav>
 
@@ -62,22 +74,25 @@
   highlightActiveHashRoute();
 
   function openMobileNavigation(e) {
-
     var mobileNav = document.getElementById('mobile-nav');
-
-    if (mobileNav.classList.contains('hidden')) {
-      mobileNav.classList.remove('hidden');
-      mobileNav.classList.add('block');
-    }
+    document.body.style.overflow = 'hidden';
+    mobileNav.style.display = 'block';
+    requestAnimationFrame(() => {
+      mobileNav.classList.add('translate-x-0');
+      mobileNav.classList.remove('-translate-x-full');
+    });
   }
 
   function closeMobileNavigation(e) {
-
     e.stopPropagation();
-
     var mobileNav = document.getElementById('mobile-nav');
-
-    mobileNav.classList.remove('block');
-    mobileNav.classList.add('hidden');
+    document.body.style.overflow = '';
+    mobileNav.classList.remove('translate-x-0');
+    mobileNav.classList.add('-translate-x-full');
+    setTimeout(() => {
+      if (mobileNav.classList.contains('-translate-x-full')) {
+        mobileNav.style.display = 'none';
+      }
+    }, 300);
   }
 </script>

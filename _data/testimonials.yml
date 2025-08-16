@@ -12,10 +12,8 @@
             create."
   image: /assets/images/clientlogos/BSF_Logo_CMYK.jpg
   link: https://www.beaverstreetfisheries.com/  
-
-# - name: Jane Doe
-#   title: CTO, StartupCo
-#   quote: The team's approach to purpose-driven development resulted in software that our users actually want to use.
-#   image: /assets/images/testimonials/jane-doe.jpg
-
-# Add more testimonials here
+  practices:
+    - name: Software Teaming
+      link: /2024/04/22/the-best-benefits-of-teaming.html
+    - name: Process Consulting
+      link: /services#process-consulting

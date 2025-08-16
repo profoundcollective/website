@@ -3,46 +3,54 @@ layout: default
 title: "Our Clients"
 ---
 
-<div class="bg-white font-josefin">
-    <div class="hero min-h-[40vh] bg-black">
-        <div class="text-center text-white hero-content">
-            <div class="max-w-3xl">
-                <h1 class="text-5xl font-bold">Our Clients</h1>
-                <p class="py-6">
-                    Here's what our clients say about working with Profound Collective.
-                </p>
-            </div>
-        </div>
+<div class="min-h-screen bg-black font-josefin">
+    <div class="py-8 text-center text-white bg-black sm:py-12 md:py-16">
+            <h1 class="px-4 text-4xl font-bold sm:text-4xl md:text-5xl">Our Clients</h1>
+            <p class="max-w-2xl px-6 py-4 mx-auto text-base sm:py-6 sm:px-8 sm:text-lg">
+                Here's what our clients say about working with Profound Collective.
+            </p>
     </div>
 
-    <div class="container px-4 py-12 mx-auto">
-        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <div class="container px-4 py-8 mx-auto font-light sm:px-6 lg:px-8 sm:py-12">
+        <div class="grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
             {% for testimonial in site.data.testimonials %}
-            <div class="p-8 transition-shadow bg-white border border-gray-100 rounded-lg shadow-lg hover:shadow-xl">
+            <div class="p-6 transition-shadow bg-white border border-gray-100 rounded-lg shadow-lg sm:p-8 hover:shadow-xl">
                 <details class="group">
                     <summary class="list-none cursor-pointer">
-                        <blockquote class="mb-4 italic text-gray-700 transition-opacity duration-300 group-open:hidden">
+                        <blockquote class="mb-4 text-sm text-gray-700 transition-opacity duration-300 sm:text-base group-open:hidden">
                             "{{ testimonial.quote }}"
-                            <span class="ml-2 text-green-600">Read More</span>
+                            <span class="ml-2 font-medium text-green-600 hover:text-green-700">Read More</span>
                         </blockquote>
                     </summary>
                     <div class="mb-4 text-gray-700 transition-all duration-300">
-                        <blockquote class="italic">{{ testimonial.full }}</blockquote>
-                        <button class="mt-2 ml-2 text-green-600 hover:text-green-700"
+                        <blockquote class="text-sm sm:text-base">{{ testimonial.full }}</blockquote>
+                        <button class="mt-4 ml-2 font-medium text-green-600 hover:text-green-700"
                             onclick="this.closest('details').removeAttribute('open')">Read Less</button>
                     </div>
                 </details>
-                <div class="flex items-center">
-                    {% if testimonial.image %}
-                    <a href="{{ testimonial.link }}" target="_blank" rel="noopener">
-                        <img src="{{ testimonial.image }}" alt="{{ testimonial.name }}"
-                            class="object-scale-down w-12 h-12 mr-4 rounded-full">
-                    </a>
-                    {% endif %}
-                    <div>
-                        <div class="font-bold text-gray-900">{{ testimonial.name }}</div>
-                        <div class="text-sm text-gray-600">{{ testimonial.title }}</div>
+                <div class="flex flex-col mt-6 space-y-4">
+                    <div class="flex items-center">
+                        {% if testimonial.image %}
+                        <a href="{{ testimonial.link }}" target="_blank" rel="noopener">
+                            <img src="{{ testimonial.image }}" alt="{{ testimonial.name }}"
+                                class="object-scale-down w-10 h-10 mr-3 rounded-full sm:w-12 sm:h-12 sm:mr-4">
+                        </a>
+                        {% endif %}
+                        <div>
+                            <div class="text-sm font-bold text-gray-900 sm:text-base">{{ testimonial.name }}</div>
+                            <div class="text-xs text-gray-600 sm:text-sm">{{ testimonial.title }}</div>
+                        </div>
                     </div>
+                    {% if testimonial.practices %}
+                    <div class="flex flex-wrap gap-2">
+                        {% for practice in testimonial.practices %}
+                        <a href="{{ practice.link | default: '/resources' }}" 
+                           class="px-2 py-1 text-xs font-medium text-white transition-colors duration-200 bg-green-600 rounded-lg shadow-sm sm:px-3 sm:text-sm hover:bg-green-700 hover:shadow-md">
+                            {{ practice.name }}
+                        </a>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
                 </div>
             </div>
             {% endfor %}
