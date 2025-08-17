@@ -3,80 +3,105 @@ layout: default
 title: "Services"
 ---
 
-<section id="services" class="py-24 min-h-screen text-center bg-stone-50 flex flex-col items-center">
-
-    <header class="text-5xl mb-2 font-zilla font-bold flex flex-col items-center">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-        class="w-16 h-16">
-        <path stroke-linecap="round" stroke-linejoin="round"
-        d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3" />
-    </svg>
-    Services
-    </header>
-
-    <div class="w-11/12 lg:w-12/12 flex flex-col lg:flex-row items-top">
-
-    <div class="lg:w-4/12 p-4 m-4 bg-stone-100 shadow-lg">
-        <h3 class="font-bold text-2xl lg:text-3xl mb-4">Engineering</h3>
-
-        <p class="lg:text-2xl">
-        We deliver software that aligns with your organization's value streams.
-        </p>
-
-        <p class="pt-4 lg:text-2xl">
-        Any platform. Any language. We're here to solve problems regardless of the tools utilized.
-        </p>
-
-        <p class="pt-4 mb-2 lg:text-2xl">
-        We are well versed in most if not all modern software engineering practices including
-        <a href="https://en.wikipedia.org/wiki/Behavior-driven_development" class="font-bold underline"
-            target="_blank">Behavior Driven Development</a>,
-        <a href="https://en.wikipedia.org/wiki/Test-driven_development" class="font-bold underline"
-            target="_blank">Test Driven Development</a>,
-        <a href="https://cloud.google.com/architecture/devops" class="font-bold underline" target="_blank">DevOps
-            Principles & Practices</a>, and
-        <a href="https://en.wikipedia.org/wiki/Mob_programming" class="font-bold underline" target="_blank">Software
-            Teaming/Mob Programming</a>.
-        </p>
-
-    </div>
-
-    <div class="lg:w-4/12 p-4 m-4 bg-stone-100 shadow-lg">
-        <h3 class="font-bold text-2xl lg:text-3xl mb-4">Consulting</h3>
-        <p class="lg:text-2xl">
-        While software is core to what we do, we love to assist organizations with strategic technical decisions,
-        <a href="https://en.wikipedia.org/wiki/Systems_thinking" class="font-bold underline" target="_blank">systems 
-            thinking</a>, process improvement,
-        and other management practices.
-        </p>
-
-        <p class="pt-4 lg:text-2xl">
-        We can serve in Fractional CTO and CIO roles. We're there when you need us.
-        </p>
-
-        <p class="pt-4 mb-2 lg:text-2xl">
-        Need help hiring? Not only can we help interview and assess talent, but we can find the best and brightest
-        for your organization.
-        </p>
-
-    </div>
-
-    <div class="lg:w-4/12 p-4 m-4 bg-stone-100 shadow-lg">
-        <h3 class="font-bold text-2xl lg:text-3xl mb-4">Education</h3>
-        <p class="lg:text-2xl">
-        We help teams become more <span class="font-bold">effective</span> at building quality software. Everyone is
-        involved and <span class="font-bold">we learn more together</span>.
-        </p>
-
-        <p class="pt-4 lg:text-2xl">
-        We have mentored students, engineers, managers, and other roles in the technology spectrum at all levels of
-        experience. We love <span class="font-bold">learning and sharing</span> with others.
-        </p>
-
-        <p class="pt-4 mb-2 lg:text-2xl">
-        Lunch and learns, workshops, and training are all available on any topic relevant to the team, organization,
-        or solutions being delivered.
+<div class="min-h-screen text-white bg-black font-josefin">
+    <!-- Header Section -->
+    <div class="container px-4 py-16 mx-auto text-center">
+        <h1 class="mb-8 text-5xl font-bold">Our Services</h1>
+        <p class="max-w-3xl mx-auto text-xl font-light">
+            We specialize in delivering high-quality software solutions and transformative consulting services 
+            that help organizations achieve their goals through better systems and practices.
         </p>
     </div>
+
+    <!-- Services Grid -->
+    <div class="container px-4 py-12 mx-auto">
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <!-- Engineering Card -->
+            <div class="flex flex-col p-8 transition-all duration-300 border border-gray-800 rounded-lg hover:border-green-600">
+                <div class="flex items-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 mr-3 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                    </svg>
+                    <h2 class="text-2xl font-bold">Engineering</h2>
+                </div>
+                <div class="flex flex-col flex-grow text-gray-300">
+                    <div class="flex-grow space-y-4">
+                        <p>We deliver software that aligns with your organization's value streams.</p>
+                        <p>Any platform. Any language. We're here to solve problems regardless of the tools utilized.</p>
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="mb-4 text-lg font-semibold text-green-500">Our Practices Include:</h3>
+                        <ul class="ml-4 space-y-2 list-disc">
+                            <li><a href="https://en.wikipedia.org/wiki/Behavior-driven-development" class="transition-colors hover:text-green-500" target="_blank" rel="noopener">Behavior Driven Development</a></li>
+                            <li><a href="https://en.wikipedia.org/wiki/Test-driven-development" class="transition-colors hover:text-green-500" target="_blank" rel="noopener">Test Driven Development</a></li>
+                            <li><a href="https://cloud.google.com/architecture/devops" class="transition-colors hover:text-green-500" target="_blank" rel="noopener">DevOps Principles & Practices</a></li>
+                            <li><a href="https://en.wikipedia.org/wiki/Mob_programming" class="transition-colors hover:text-green-500" target="_blank" rel="noopener">Software Teaming/Mob Programming</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Consulting Card -->
+            <div class="flex flex-col p-8 transition-all duration-300 border border-gray-800 rounded-lg hover:border-green-600">
+                <div class="flex items-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 mr-3 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                    <h2 class="text-2xl font-bold">Consulting</h2>
+                </div>
+                <div class="flex flex-col flex-grow text-gray-300">
+                    <div class="flex-grow space-y-4">
+                        <p>While software is core to what we do, we love to assist organizations with strategic technical decisions, 
+                        <a href="https://en.wikipedia.org/wiki/Systems_thinking" class="transition-colors hover:text-green-500" target="_blank" rel="noopener">systems thinking</a>, 
+                        process improvement, and other management practices.</p>
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="mb-4 text-lg font-semibold text-green-500">We Specialize In:</h3>
+                        <ul class="ml-4 space-y-2 list-disc">
+                            <li>Strategic Technical Planning</li>
+                            <li>Process Optimization</li>
+                            <li>Team Development</li>
+                            <li>Organizational Transformation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Training Card -->
+            <div class="flex flex-col p-8 transition-all duration-300 border border-gray-800 rounded-lg hover:border-green-600">
+                <div class="flex items-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 mr-3 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                    <h2 class="text-2xl font-bold">Training</h2>
+                </div>
+                <div class="flex flex-col flex-grow text-gray-300">
+                    <div class="flex-grow space-y-4">
+                        <p>We offer comprehensive training programs to help teams and organizations level up their capabilities.</p>
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="mb-4 text-lg font-semibold text-green-500">Training Areas:</h3>
+                        <ul class="ml-4 space-y-2 list-disc">
+                            <li>Software Engineering Practices</li>
+                            <li>Agile & Lean Methods</li>
+                            <li>Technical Leadership</li>
+                            <li>Team Collaboration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</section>
+
+    <!-- Call to Action -->
+    <div class="container px-4 py-16 mx-auto text-center">
+        <h2 class="mb-8 text-3xl font-bold">Ready to Transform Your Organization?</h2>
+        <p class="max-w-2xl mx-auto mb-8 text-xl font-light">
+            Let's discuss how we can help you achieve your goals through better software, systems, and practices.
+        </p>
+        <a href="mailto:info@profoundcollective.com" class="inline-block px-8 py-3 text-lg font-medium text-white transition-colors bg-green-600 rounded-lg hover:bg-green-700">
+            Get Started Today
+        </a>
+    </div>
+</div>
+    

@@ -18,10 +18,13 @@
             onclick="closeMobileNavigation(event)">✕</button>
         </div>
         <nav class="flex flex-col mt-8 space-y-6">
+          <!-- Debug Mobile: {{ page.url }} -->
           {% for item in site.data.navigation %}
-          <div {% if page.url==item.link %} class="font-bold" {% endif %}>
-            <a href="{{ item.link }}" class="block w-full py-2 transition-colors nav-link hover:text-green-500">
-              {{ item.name }}
+          <div>
+            {% assign current_page = page.url %}
+            <a href="{{ item.link }}" 
+               class="block w-full py-2 transition-colors nav-link hover:text-green-500 {% if current_page == item.link %}text-green-500 font-bold border-b-2 border-green-500{% endif %}">
+              {{ item.name }}<!-- Debug: [{{ current_page }}] vs [{{ item.link }}] -->
             </a>
           </div>
           {% endfor %}
@@ -31,9 +34,16 @@
   </div>
   </div>
   <div class="justify-between hidden w-4/6 text-xs text-white lg:flex xl:w-3/6 font-josefin md:text-xl lg:text-xl">
+    <!-- Debug: {{ page.url }} -->
     {% for item in site.data.navigation %}
-    <div {% if page.url==item.link %} class="font-bold" {% endif %}>
-      <a href="{{ item.link }}" class="nav-link">
+    <div>
+      {% assign current_page = page.url %}
+      <a href="{{ item.link }}" 
+         class="nav-link relative py-2 transition-all duration-200
+                {% if current_page == item.link %}
+                text-green-500 font-bold after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-green-500
+                {% endif %}
+                hover:text-green-500 hover:after:absolute hover:after:bottom-0 hover:after:left-0 hover:after:w-full hover:after:h-0.5 hover:after:bg-green-500">
         {{ item.name }}
       </a>
     </div>
