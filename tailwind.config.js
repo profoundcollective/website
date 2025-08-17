@@ -8,6 +8,14 @@ module.exports = {
       './index.html',
     ],
     theme: {
+      fontFamily: {
+        'josefin': ['Josefin Sans', 'sans-serif']
+      },
+      extend: {
+        fontDisplay: {
+          'swap': 'swap',
+        }
+      },
       extend: {
         fontFamily: {
           'rowdie': ['Rowdies'],
