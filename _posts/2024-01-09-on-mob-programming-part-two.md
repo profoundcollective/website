@@ -57,7 +57,7 @@ The benefits are striking.
 ### The Cost of Leaving
 
 <div class="post-image" markdown="1">
-![the-mob-lives-on](https://media.licdn.com/dms/image/v2/D4E12AQElWJiOhURpdQ/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1704824268217?e=1736985600&v=beta&t=UYXvnNTh_DoQkl14XFbXGM5CuqSKmb_RqAHPJpXtypM)
+![the-mob-lives-on](https://miro.medium.com/v2/resize:fit:4800/format:webp/1*VAR7uyua--zeUKdSN2X7qw.jpeg)
 
 Workers will come and go. The Mob lives on. 
 </div>
@@ -140,7 +140,7 @@ Without delving any deeper into the above topics, it is and has been known for d
 
 <div class="post-image" markdown="1">
 
-![cost-of-change](https://media.licdn.com/dms/image/v2/D4E12AQGRNDKARTm_5g/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1704826290864?e=1736985600&v=beta&t=lW1z4NAWXEm75GUEprQQAJrQhnT5-Lx2-vedWnaY4GE)
+![cost-of-change](https://becomingagile.wordpress.com/wp-content/uploads/2014/09/cost-of-change.png)
 
 Waterfall jokes aside, it would be nice to see this chart reimagined with Software Teaming and how much the curve flattens.
 </div>
