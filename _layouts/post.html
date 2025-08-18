@@ -17,7 +17,7 @@
     {% feed_meta %}
     {% seo %}
   </head>
-  <body>
+  <body class="blog-layout">
     {% include navigation.html %}
     <main class="bg-black min-h-screen py-12 text-white">
         <article class="container mx-auto px-4 max-w-4xl">
@@ -30,7 +30,18 @@
                     </div>
                 </header>
 
-                <div class="post prose prose-invert prose-lg max-w-none prose-headings:text-white prose-a:text-green-500 hover:prose-a:text-green-400">
+                <div class="post prose prose-invert max-w-none
+                    prose-p:text-2xl prose-p:leading-relaxed prose-p:mb-6
+                    prose-headings:text-white 
+                    prose-h1:text-5xl prose-h1:leading-tight
+                    prose-h2:text-4xl prose-h2:leading-snug
+                    prose-h3:text-3xl prose-h3:leading-snug
+                    prose-a:text-green-500 hover:prose-a:text-green-400
+                    prose-blockquote:pl-6 prose-blockquote:text-2xl prose-blockquote:border-l-4 prose-blockquote:border-green-500 prose-blockquote:text-gray-300
+                    prose-ul:text-2xl prose-ul:leading-relaxed
+                    prose-ol:text-2xl prose-ol:leading-relaxed
+                    prose-li:text-2xl prose-li:leading-relaxed
+                    prose-li:mb-2">
                     {{ content }}
                 </div>
 

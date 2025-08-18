@@ -1,80 +1,87 @@
 ---
+# Jekyll front matter for processing
 ---
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.post {
-    @apply font-josefin font-light text-gray-200;
-}
+@layer components {
+  /* Reset any inherited font weights in the blog layout */
+  .blog-layout {
+    @apply font-light;
+  }
 
-.post h1 {
-    @apply text-4xl font-bold mt-8 mb-4 text-white;
-}
+  /* Specific blog post styles */
+  .post {
+    @apply text-gray-200 font-josefin;
+  }
 
-.post h2 {
-    @apply text-3xl font-bold mt-8 mb-4 text-white;
-}
+  .post h1 {
+    @apply mt-8 mb-4 text-4xl font-bold text-white;
+  }
 
-.post h3 {
-    @apply text-2xl font-bold mt-6 mb-3 text-white;
-}
+  .post h2 {
+    @apply mt-8 mb-4 text-3xl font-bold text-white;
+  }
 
-.post h4 {
-    @apply text-xl font-bold mt-6 mb-3 text-white;
-}
+  .post h3 {
+    @apply mt-6 mb-3 text-2xl font-bold text-white;
+  }
 
-.post h5 {
-    @apply text-lg font-bold mt-4 mb-2 text-white;
-}
+  .post h4 {
+    @apply mt-6 mb-3 text-xl font-bold text-white;
+  }
 
-.post h6 {
-    @apply font-bold mt-4 mb-2 text-white;
-}
+  .post h5 {
+    @apply mt-4 mb-2 text-lg font-bold text-white;
+  }
 
-.post p {
-    @apply mb-4 leading-relaxed;
-}
+  .post h6 {
+    @apply mt-4 mb-2 font-bold text-white;
+  }
 
-.post ul {
-    @apply list-disc pl-6 mb-4 text-gray-200;
-}
+  .post p {
+    @apply mb-4 text-2xl leading-relaxed;
+  }
 
-.post ol {
-    @apply list-decimal pl-6 mb-4 text-gray-200;
-}
+  .post blockquote {
+    @apply p-4 my-6 italic text-gray-300 bg-gray-900 border-l-4 border-green-500;
+  }
 
-.post li {
-    @apply mb-2;
-}
+  .post blockquote p {
+    @apply text-2xl italic text-gray-300;
+  }
 
-.post a {
-    @apply text-green-500 hover:text-green-400 transition-colors duration-200;
-}
+  .post ul {
+    @apply pl-6 mb-4 text-2xl text-gray-200 list-disc;
+  }
 
-.post blockquote {
-    @apply pl-4 border-l-4 border-green-500 italic my-6 text-gray-300;
-}
+  .post ol {
+    @apply pl-6 mb-4 text-2xl text-gray-200 list-decimal;
+  }
 
-.post code {
-    @apply bg-gray-900 px-1 rounded border border-green-900;
-}
+  .post li {
+    @apply mb-2 text-2xl;
+  }
 
-.post pre {
-    @apply bg-gray-900 p-4 rounded-lg overflow-x-auto mb-6 border border-green-900;
-}
+  .post a {
+    @apply text-green-500 transition-colors duration-200 hover:text-green-400;
+  }
 
-.post hr {
-    @apply border-green-900 my-8;
-}
+  .post code {
+    @apply px-1 bg-gray-900 border border-green-900 rounded;
+  }
 
-.post-image {
-    @apply flex flex-col justify-center items-center m-8;
-    @apply text-lg italic;
-}
+  .post pre {
+    @apply p-4 mb-6 overflow-x-auto bg-gray-900 border border-green-900 rounded-lg;
+  }
 
-.post blockquote {
-    @apply p-4 my-4 border-s-4 border-gray-300 bg-gray-50 dark:border-gray-500 dark:bg-gray-800;
-    @apply text-xl italic font-medium leading-relaxed text-gray-900 dark:text-white;
+  .post hr {
+    @apply my-8 border-green-900;
+  }
+
+  .post-image {
+    @apply flex flex-col items-center justify-center m-8 text-lg italic;
+  }
 }
