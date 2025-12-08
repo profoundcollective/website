@@ -4,13 +4,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>{{ page.title }} - {{ site.title }}</title>
+    <!-- Preload critical CSS to avoid chaining -->
+    <link rel="preload" href="{{ "assets/css/main.css" | relative_url }}" as="style">
+    <link rel="preload" href="{{ "assets/css/blog.css" | relative_url }}" as="style">
     <!-- Font optimization: preconnect to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Load only Josefin Sans with needed weights, using display=swap for fast text rendering -->
+    <!-- Load only Josefin Sans with needed weights, deferred to avoid blocking render -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;600;700&display=swap" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;600;700&display=swap"></noscript>
-
+    <!-- Main stylesheets -->
     <link rel="stylesheet" href="{{ "assets/css/main.css" | relative_url }}">
     <link rel="stylesheet" href="{{ "assets/css/blog.css" | relative_url }}">
 
