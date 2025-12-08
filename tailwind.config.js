@@ -10,9 +10,6 @@ module.exports = {
     theme: {
       fontFamily: {
         'josefin': ['Josefin Sans', 'sans-serif'],
-        'rowdie': ['Rowdies'],
-        'roboto': ['Roboto'],
-        'zilla': ['Zilla Slab'],
         'main': ['Verdana']
       },
       extend: {
