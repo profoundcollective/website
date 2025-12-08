@@ -22,34 +22,23 @@
   </head>
   <body class="blog-layout">
     {% include navigation.html %}
-    <main class="bg-black min-h-screen py-12 text-white">
-        <article class="container mx-auto px-4 max-w-4xl">
-            <div class="bg-black border border-green-500 rounded-lg shadow-lg p-8 md:p-12">
+    <main class="min-h-screen py-12 text-white bg-black">
+        <article class="container max-w-4xl px-4 mx-auto">
+            <div class="p-8 bg-black border border-green-500 rounded-lg shadow-lg md:p-12">
                 <header class="mb-8">
-                    <h1 class="text-4xl md:text-5xl font-bold mb-4">{{ page.title }}</h1>
-                    <div class="flex flex-wrap gap-x-4 text-gray-400 italic">
+                    <h1 class="mb-4 text-4xl font-bold md:text-5xl">{{ page.title }}</h1>
+                    <div class="flex flex-wrap italic text-gray-400 gap-x-4">
                         <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%b %d, %Y" }}</time>
                         {% if page.author %}<span>by {{ page.author }}</span>{% endif %}
                     </div>
                 </header>
 
-                <div class="post prose prose-invert max-w-none
-                    prose-p:text-2xl prose-p:leading-relaxed prose-p:mb-6
-                    prose-headings:text-white 
-                    prose-h1:text-5xl prose-h1:leading-tight
-                    prose-h2:text-4xl prose-h2:leading-snug
-                    prose-h3:text-3xl prose-h3:leading-snug
-                    prose-a:text-green-500 hover:prose-a:text-green-400
-                    prose-blockquote:pl-6 prose-blockquote:text-2xl prose-blockquote:border-l-4 prose-blockquote:border-green-500 prose-blockquote:text-gray-300
-                    prose-ul:text-2xl prose-ul:leading-relaxed
-                    prose-ol:text-2xl prose-ol:leading-relaxed
-                    prose-li:text-2xl prose-li:leading-relaxed
-                    prose-li:mb-2">
+                <div class="prose post prose-invert max-w-none prose-p:text-2xl prose-p:leading-relaxed prose-p:mb-6 prose-headings:text-white prose-h1:text-5xl prose-h1:leading-tight prose-h2:text-4xl prose-h2:leading-snug prose-h3:text-3xl prose-h3:leading-snug prose-a:text-green-500 hover:prose-a:text-green-400 prose-blockquote:pl-6 prose-blockquote:text-2xl prose-blockquote:border-l-4 prose-blockquote:border-green-500 prose-blockquote:text-gray-300 prose-ul:text-2xl prose-ul:leading-relaxed prose-ol:text-2xl prose-ol:leading-relaxed prose-li:text-2xl prose-li:leading-relaxed prose-li:mb-2">
                     {{ content }}
                 </div>
 
                 {% if page.comments %}
-                    <div class="mt-12 pt-8 border-t border-green-800">
+                    <div class="pt-8 mt-12 border-t border-green-800">
                         {% include disqus.html %}
                     </div>
                 {% endif %}
